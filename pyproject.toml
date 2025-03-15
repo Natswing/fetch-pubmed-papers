@@ -1,0 +1,17 @@
+
+[tool.poetry]
+name = "fetch-pubmed-papers"
+version = "0.1.0"
+description = "A tool to fetch research papers from PubMed and filter non-academic authors."
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+get-papers-list = "fetch_pubmed_papers:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
